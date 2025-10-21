@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国建筑游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8B0000;
+            text-align: center;
+        }
+        .level {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        button {
+            background: #8B0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>中国建筑变迁探索游戏</h1>
+        <p>欢迎来到中国建筑探索游戏！请选择一个关卡开始：</p>
+        
+        <div class="level">
+            <h2>第一关：建筑特征配对</h2>
+            <p>将建筑特征与对应的建筑类型配对。</p>
+            <button onclick="startLevel(1)">开始第一关</button>
+        </div>
+        
+        <div class="level">
+            <h2>第二关：根据线索选择建筑物</h2>
+            <p>根据线索选择正确的建筑物名称。</p>
+            <button onclick="startLevel(2)">开始第二关</button>
+        </div>
+        
+        <div class="level">
+            <h2>第三关：建筑仿写练习</h2>
+            <p>写一段关于苏州建筑特点的文字。</p>
+            <button onclick="startLevel(3)">开始第三关</button>
+        </div>
+    </div>
+
+    <script>
+        function startLevel(level) {
+            alert("开始第 " + level + " 关！");
+            // 这里可以添加实际开始关卡的代码
+        }
+    </script>
+</body>
+</html>
